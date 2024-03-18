@@ -63,7 +63,7 @@ namespace UPDesckop.Pages
                                     }
 
                                     iTextSharp.text.Document document = new iTextSharp.text.Document();
-                                    PdfWriter.GetInstance(document, new FileStream("Otchet2.pdf", FileMode.Create));
+                                    PdfWriter.GetInstance(document, new FileStream("Otchet3.pdf", FileMode.Create));
                                     document.Open();
                                     document.Add(new iTextSharp.text.Paragraph($"Application report: {combIds.Text}"));
                                     document.Add(new iTextSharp.text.Paragraph($"Time spent: {tbTime.Text}"));
